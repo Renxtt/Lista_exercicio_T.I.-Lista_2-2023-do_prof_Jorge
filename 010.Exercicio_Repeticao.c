@@ -13,10 +13,17 @@ int main(void){
 	SetConsoleCP(cp);       
 	SetConsoleOutputCP(cp);
 
-//010) Elabore um programa que receba um n˙mero do usu·rio e mostre a sua soma atÈ o usu·rio digitar o 0 para parar.
+//010) Elabore um programa que receba um n√∫mero do usu√°rio e mostre a sua soma at√© o usu√°rio digitar o 0 para parar.
 	
 	
+    int numero, soma = 0;
 
-	return 0;	
+    do {
+        printf("Digite um numero (ou 0 para parar): ");
+        scanf("%d", &numero);
+        soma += numero;
+        printf("Soma atual: %d\n", soma);
+    } while (numero != 0);
 
+    return 0;
 }
